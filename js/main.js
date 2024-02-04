@@ -248,7 +248,7 @@ let year = today.getFullYear();
 	console.log(stroka.split("-")); //из строки формируем массив
 	*/
 	//Создание классов (внутри класса - описание значения, функций)
-	
+	/*
 	class Person {
 		constructor(name, age, happiness) {
 		this.name = name;
@@ -268,6 +268,6 @@ let year = today.getFullYear();
 	console.log (alex.name);
 	console.log (bob.name);
 	alex.info();
-	
+	*/
 	
 	
