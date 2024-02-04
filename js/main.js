@@ -150,7 +150,103 @@ let year = today.getFullYear();
 		console.log (counter);
 	} 
 	//ВЕРНУТЬ СЮДА
+	/*
+	// передача параметра
+	var counter = 0;
+	function onClickButton (el) {
+		counter++;
+		el.innerHTML = "Вы нажали на кнопку: " + counter;
+	el.style.backgroundColor ="RED"
+		console.log(el.name);
+		el.style.cssText = "border-radius' 5px; border:0; fontsize: 20px";//таким обпразом можно прописывать стили, не импользуя библиотеки стилей. !Если использовать css, то отдельно установленные стили не действуют
+	}
+	//Будет выводиться в консоль то что вводится в строку ввода-->
+	function onInPute(el) {
+		console.log(el.value);
+	}
+	*/
 	
+	/*var text = document.getElementById('text');  //присвоили объект переменной и это один объект
+	console.log ("раз - " + document.getElementById('text').id);
+	console.log ("два - " + document.getElementById('text').title);
+	console.log ("три - " + text.title);
+	text.style.color ="red"
+	text.innerHTML = "New<br>string" //Замена текста вывода
+	document.getElementById('text').style.backgroundColor="blue"
+	*/
+	
+	//можно найти объекты по названию тэга(можно по document.getElementsByClassName , тогда нужно задать class ="" )
+	/*
+	var spans = document.getElementsByTagName('span'); 
+	for (var i=0; i<spans.length; i++) 
+	{
+			console.log(spans[i].innerHTML); //innerHTML - Может как передавать текст внутрь тега, так и выводить значение из тэга
+		
+	}*/
+	/*
+	//Обработка форм
+	
+	document.getElementById('main-form').addEventListener("submit", checkForm)//пробуем без onsubmit="return checkForm(this)", если с то строчка не нужна. Используются ссылки на элементы <form id = "main-form" и <input type = "submit"
+	
+	//function checkForm(el) {//пробуем без onsubmit="return checkForm(this)", если с то строчка нужна эта.
+	function checkForm(event) {//пробуем без onsubmit="return checkForm(this)", если с то строчка не нужна.
+		event.preventDefault(); //отключаем стандартное поведение страницы, для использования без return
+		var el = document.getElementById('main-form');//пробуем без onsubmit="return checkForm(this)", если с то строчка не нужна.
+		
+		var name = el.name.value;
+		var pass = el.pass.value;
+		var repass = el.repass.value;
+		var stateMale = el.state.value;
+		
+		var fail = "";
+		
+		
+		if (name =="" || pass =="" || stateMale == "") 
+				fail = "Заполните все поля";
+		else if (name.length<3 || pass.length<3) {
+				fail = "Длина логина или пароля менее 3 символов";}
+		else if (pass != repass) {
+				fail = "Пароль и проверка пароля не сопадают";}
+		else if (pass.split("&").length > 1) //проверяем на присутствие запрещенного символа,  split - разбивает строку по символу & и если эелементов больше 1, то ошибка
+				fail = "Нельзя использовать символ & в пароле";
+		
+		if (fail != "") {
+			document.getElementById('error').innerHTML = fail;
+			//return false;//пробуем без onsubmit="return checkForm(this)", если с то строчка нужна эта.
+		} 		else		{ 
+	console.log (repass);
+	console.log (pass);
+	alert("Все данные корректно заполнены");
+	//window.location = 'https://dzen.ru/'; //перенаправление на другую страницу
+	//return false;//пробуем без onsubmit="return checkForm(this)", если с то строчка нужна эта.
+	}
+//return false;	//пробуем без onsubmit="return checkForm(this)", если с то строчка нужна эта.
+	}
+	*/
+	
+	//создание своих объектов
+	/*
+	var date = new Date();
+	
+	
+	console.log(date.getFullYear());
+	console.log(date.getMonth());//считает месяц с нуля
+	console.log(date.getHours());
+	console.log(date.getMinutes());
+	
+	//Можно вывести свое значение
+	date.setHours(12);
+	console.log(date.getHours());
+	*/
+	/*
+	var arr = [10, 5, 90, 7, 8, 9, 0];
+	var stroka = arr.sort().join("-");
+	
+	console.log(arr.join("|||")); // join объединяет в строку
+	console.log(arr.sort());
+	console.log(arr.sort().reverse().join("-"));
+	console.log(stroka.split("-")); //из строки формируем массив
+	*/
 	//Создание классов (внутри класса - описание значения, функций)
 	
 	class Person {
