@@ -1,15 +1,15 @@
 //пример комментария
-	/*или так можно описаьт коммент*/
+	/*или так можно описать коммент*/
 
 	//document.write("Что то там");
 	//	console.log("Привет. Консоль выводит");
 	//console.error("Привет. Консоль выводит");
 	//console.warn("Привет. Консоль выводит");
-/*	var num = 5;
+	/*var num = 5;
 		console.log("Переменная: " + num);
 		
 	var number = 7;
-	var isHHH = false;
+	var isHHH = true;
 		if ( number > num && !isHHH)
 			
 			{
@@ -42,7 +42,7 @@
 		console.log("Все элементы массива: " + arr);
 		console.log("3 элементы массива: " + arr[2]);
 		console.log("Длина массива: " + arr.length);
-		*/
+*/
 	//for ЦИКЛ	
 	/*for (var i=100; i>5; i/=2) {  //i/=2 - это деление на 2 при следующей итерации
 		console.log(i);
@@ -60,7 +60,7 @@
 	/*var x=100;
 	do {
 		console.log( "Единичный вывод :" + x);
-	}while(x<50);  */// обеспечивает единичное срабатывание
+	}while(x<50); */ // обеспечивает единичное срабатывание
 	//разнообразие использования
 	/*for (var i=10; i<=20; i+=2) {  //i/=2 - это деление на 2 при следующей итерации
 		if (i>15)
@@ -68,7 +68,7 @@
 		console.log(i);
 	}*/
 	/*
-	for (var i=10; i<=20; i++) {  //выводятся только не четные числа, т.к. пр четных равенство действительно и србатывает continue; перекидывая на for , т.е. без вывода.
+	for (var i=10; i<=40; i++) {  //выводятся только не четные числа, т.к. при четных равенство действительно и србатывает continue; перекидывая на for , т.е. без вывода.
 		if (i%2 ==0)
 			continue;
 		console.log(i);
@@ -77,8 +77,8 @@
 	
 	//alert ("Простое всплывающее окно!");
 	//confirm ("Всплаывающее окно с окей и отмена");
-	
-	/* var data  = confirm ("Да или Нет");
+/*	
+	 var data  = confirm ("Да или Нет");
 	if(data) {
 		alert("Конечно ДА, молодец");
 			}
@@ -104,20 +104,34 @@ let year = today.getFullYear();
 	
 	//----------ФУНКЦИИ-----------//
 	
-	/*
+	
 	function info(word) {
-		console.log ("Сумма чисел расчитанная функцией" + word + "!");
+		console.log ("Сумма чисел расчитанная функцией info " + word + "!");
 	}
 	
 	function summa(a,b) {
 		var res = a+b;
+		console.log(res);
 		info (res);
+		
 	}
+
+	var  number1 = prompt ("Введите первое число");
+	  
+	var  number2 = prompt ("Введите второе число");
 	
-	var number1 = prompt ("Введите первое число");
-	var number2 = prompt ("Введите второе число");
-	summa(number1,number2);
-	*/
+	
+	if (isNaN (number1 % 2)  || isNaN (number2 % 2))
+  {
+		  alert ("Одно из введенных значений не является числом")
+		  console.log(typeof  number1);
+		  console.log(typeof  number2);
+		 
+	  }
+  else {
+	  //вызов функции симуриование
+	summa(Number(number1), Number(number2));
+  }
 	
 	// возвращение значений из функции
 	/*function summa (arr) {

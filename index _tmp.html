@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Практика javascript</title>
+  </head>
+  <body>
+    <h2> Что может делать javascript</h2>
+    <p id  = "demo" title = "Обработка текста"> JS может много с html</p>
+	<p id="text"  title = "Обработка форм">Обработка форм</p>
+	
+	<!-- Создаем форму-->
+	<!-- <form id = "main-form" onsubmit="return checkForm(this)" method ="post"> <!--по умолчанию метод get, при это переданные данные отображаются в заголовке URL. 
+	return checkForm(this), обработчиу отрабатывает если мы возврщаем значение функции checkForm, если true, то перезагружаем, если false, то не перезугружаем
+	Но такой принцип не совсем верен, т.к. смешивается html и java. ПРобуем без onsubmit="return checkForm(this)"
+	-->
+	<!-- РАБОТА С ФОРМАМИ
+	<form id = "main-form" method ="post">
+	<label for = "name"> Имя: </label>
+	<input type = "text" name = "name" placeholder = "Имя" id = "name"><br><br>
+	<label for = "password"> Пароль: </label>
+	<input type = "password" name = "pass" placeholder = "Пароль" id = "pass"><br><br>
+	<label for = "repass"> Проверка пароля: </label>
+	<input type = "password" name = "repass" placeholder = "Проверка пароля" id = "repass"><br><br>
+	<span>Пол: </span>
+	<input type = "radio" name = "state"  id = "male" value = "Мужской"> 
+	<label for = "male"> Мужской: </label>
+	<input type = "radio" name = "state"  id = "female" value = "Женский"> 
+	<label for = "female"> Женский: </label><br><br>
+	<div id ="error" style ="color: red"></div>
+	<input type = "submit" name = "submit"  value = "Готово"> 
+	
+	</form>
+	<br><br>
+	
+	-->
+	<!-- можно найти по названию
+	<span> TEXT1</span>
+		<br>
+	<span> TEXT2</span>
+		<br>	
+	<span> TEXT3</span>-->
+	
+	
+	
+	
+	<!--
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Что то там"'>Нажми</button>
+	
+	<noscript> Включите javascript!!!</noscript> -->
+	<script src = "js/main.js">
+	
+	//пример комментария
+	/*или так можно описаьт коммент*/
+
+	//document.write("Что то там");
+	//	console.log("Привет. Консоль выводит");
+	//console.error("Привет. Консоль выводит");
+	//console.warn("Привет. Консоль выводит");
+		</script>
+	<!--
+	<button onclick ="alert('Вы нажали на меня!!')">Нажми на меня</button> <!--Можно вызывать обработчик непосредственно в коде-->
+	<button onclick ="onClickButton()">Нажми на меня и обработчик запустиься через вызов функции!!!</button> <!--Можно вызывать обработчик через функцию. 
+	атрибут можно применить не только к button, можно к примеру и к p1 , методов много, функцию можно вызывать без параметров-->
+	<p>
+	<!--<button name = "mainButton" onclick ="onClickButton(this)">Нажми на меня и обработчик запустиься через вызов функции c передачей параметра</button>
+	<p>
+	<input  oninput ="onInPute(this)"><!--Будет выводиться в консоль то что вводится в строку ввода</input>-->
+	
+	
+	
+  </body>
+</html>
+ 
+
